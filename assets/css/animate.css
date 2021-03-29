@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+/* Анимация главного баннера(слайдера) */
+
+.top-slider .top-banner__content {
+  -webkit-transition: opacity 0.8s ease-in-out, -webkit-transform 0.8s ease-in-out 0s;
+  transition: opacity 0.8s ease-in-out, -webkit-transform 0.8s ease-in-out 0s;
+  -o-transition: transform 0.8s ease-in-out 0s, opacity 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out 0s, opacity 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out 0s, opacity 0.8s ease-in-out, -webkit-transform 0.8s ease-in-out 0s;
+  -webkit-transform: translate(0%, 15%);
+      -ms-transform: translate(0%, 15%);
+          transform: translate(0%, 15%);
+  opacity: 0;
+}
+
+.top-slider .top-banner__content._active {
+  -webkit-transform: translate(0%, 0%);
+      -ms-transform: translate(0%, 0%);
+          transform: translate(0%, 0%);
+  opacity: 1;
+}
+
+/* Анимация блока преимуществ(иконки) */
+
+.advantages__icon {
+  -webkit-transition: opacity 0.8s ease-in-out 0s, -webkit-transform 0.8s ease-in-out 0s;
+  transition: opacity 0.8s ease-in-out 0s, -webkit-transform 0.8s ease-in-out 0s;
+  -o-transition: transform 0.8s ease-in-out 0s, opacity 0.8s ease-in-out 0s;
+  transition: transform 0.8s ease-in-out 0s, opacity 0.8s ease-in-out 0s;
+  transition: transform 0.8s ease-in-out 0s, opacity 0.8s ease-in-out 0s, -webkit-transform 0.8s ease-in-out 0s;
+  -webkit-transform: translate(-100%, 0%);
+      -ms-transform: translate(-100%, 0%);
+          transform: translate(-100%, 0%);
+  opacity: 0;
+}
+
+.advantages__icon._active {
+  -webkit-transform: translate(0%, 0%);
+      -ms-transform: translate(0%, 0%);
+          transform: translate(0%, 0%);
+  opacity: 1;
+}
+
+/* Анимация секции услуг(блок с текстом) */
+
+.service__row:nth-child(even) .service__text {
+  -webkit-transition: opacity 1s ease-in-out 0s, -webkit-transform 1s ease-in-out 0s;
+  transition: opacity 1s ease-in-out 0s, -webkit-transform 1s ease-in-out 0s;
+  -o-transition: transform 1s ease-in-out 0s, opacity 1s ease-in-out 0s;
+  transition: transform 1s ease-in-out 0s, opacity 1s ease-in-out 0s;
+  transition: transform 1s ease-in-out 0s, opacity 1s ease-in-out 0s, -webkit-transform 1s ease-in-out 0s;
+  -webkit-transform: translate(-100%, 0%);
+      -ms-transform: translate(-100%, 0%);
+          transform: translate(-100%, 0%);
+  opacity: 0;
+}
+
+.service__row:nth-child(odd) .service__text {
+  -webkit-transition: opacity 1s ease-in-out 0s, -webkit-transform 1s ease-in-out 0s;
+  transition: opacity 1s ease-in-out 0s, -webkit-transform 1s ease-in-out 0s;
+  -o-transition: transform 1s ease-in-out 0s, opacity 1s ease-in-out 0s;
+  transition: transform 1s ease-in-out 0s, opacity 1s ease-in-out 0s;
+  transition: transform 1s ease-in-out 0s, opacity 1s ease-in-out 0s, -webkit-transform 1s ease-in-out 0s;
+  opacity: 0;
+  -webkit-transform: translate(100%, 0%);
+      -ms-transform: translate(100%, 0%);
+          transform: translate(100%, 0%);
+}
+
+.service__row:nth-child(even) .service__text._active {
+  -webkit-transform: translate(0%, 0%);
+      -ms-transform: translate(0%, 0%);
+          transform: translate(0%, 0%);
+  opacity: 1;
+}
+
+.service__row:nth-child(odd) .service__text._active {
+  -webkit-transform: translate(0%, 0%);
+      -ms-transform: translate(0%, 0%);
+          transform: translate(0%, 0%);
+  opacity: 1;
+}
+
+/* Анимация секции работ */
+
+.portfolio__item {
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform 0.6s ease 0s;
+  transition: -webkit-transform 0.6s ease 0s;
+  -o-transition: transform 0.6s ease 0s;
+  transition: transform 0.6s ease 0s;
+  transition: transform 0.6s ease 0s, -webkit-transform 0.6s ease 0s;
+}
+
+.portfolio__item._active {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+@supports (-webkit-appearance:none){
+
+}
