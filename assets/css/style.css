@@ -66,6 +66,7 @@
 
 ._icon-arrow-top:before {
   content: "\e902";
+  display: inline-block;
   font-size: 22px;
   color: #fff;
 }
@@ -361,9 +362,11 @@ body._lock {
   z-index: 10000;
   background: #91c842;
   border: none;
-  outline: none;
-  width: 40px;
-  height: 40px;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  width: 58px;
+  height: 58px;
   border-radius: 50%;
   overflow: hidden;
   -webkit-transition: opacity 0.8s ease, background 0.2s linear, -webkit-transform 0.8s ease 0s;
