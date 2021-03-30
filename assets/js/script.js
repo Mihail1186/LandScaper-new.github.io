@@ -112,7 +112,6 @@ $(document).ready(function () {
    })
 
 
-
    /* ==========================================
    Инициализируем baguetteBox
    ================================================ */
@@ -141,11 +140,9 @@ $(document).ready(function () {
    });
 
 
-
    /* ==========================================
    menu-burger
    ================================================ */
-
    burgerBtn.addEventListener('click', function () {
       burgerBtn.classList.toggle('_active');
       menuBody.classList.toggle('_active');
@@ -153,14 +150,12 @@ $(document).ready(function () {
    });
 
 
-
-
-
    /* ==========================================
    preloader
    ================================================ */
    window.onload = function () {
       let preloader = document.getElementById('preloader');
+      body.classList.remove('_lock');
 
       // Скрываем preloader после загрузки страници
       preloader.style.display = 'none';
