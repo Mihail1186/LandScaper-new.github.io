@@ -101,38 +101,6 @@
   content: "\e908";
 }
 
-._icon-arrow-top:before {
-  content: "\e902";
-}
-
-._icon-search-plus:before {
-  content: "\e900";
-}
-
-._icon-arrow-menu:before {
-  content: "\e903";
-}
-
-._icon-map-marker:before {
-  content: "\e901";
-}
-
-._icon-phone:before {
-  content: "\e904";
-}
-
-._icon-youtube:before {
-  content: "\e906";
-}
-
-._icon-instagram:before {
-  content: "\e907";
-}
-
-._icon-facebook:before {
-  content: "\e908";
-}
-
 * {
   padding: 0;
   margin: 0;
