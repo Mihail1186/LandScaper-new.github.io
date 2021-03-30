@@ -64,16 +64,10 @@
   display: none;
 }
 
-._icon-arrow:before {
+._icon-arrow-top:before {
   content: "\e902";
-  font-size: 42px;
-  color: #91c842;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  font-size: 22px;
+  color: #fff;
 }
 
 ._icon-map-marker:before {
@@ -93,6 +87,38 @@
       -ms-transform: rotate(90deg);
           transform: rotate(90deg);
   vertical-align: middle;
+}
+
+._icon-youtube:before {
+  content: "\e906";
+}
+
+._icon-instagram:before {
+  content: "\e907";
+}
+
+._icon-facebook:before {
+  content: "\e908";
+}
+
+._icon-arrow-top:before {
+  content: "\e902";
+}
+
+._icon-search-plus:before {
+  content: "\e900";
+}
+
+._icon-arrow-menu:before {
+  content: "\e903";
+}
+
+._icon-map-marker:before {
+  content: "\e901";
+}
+
+._icon-phone:before {
+  content: "\e904";
 }
 
 ._icon-youtube:before {
@@ -362,21 +388,21 @@ body._lock {
 
 #toTop {
   position: fixed;
-  right: 50px;
-  bottom: 50px;
+  right: 60px;
+  bottom: 60px;
   z-index: 10000;
-  background: #fff;
+  background: #91c842;
   border: none;
   outline: none;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   overflow: hidden;
-  -webkit-transition: opacity 0.8s ease, background 0.3s linear, -webkit-transform 0.8s ease 0s;
-  transition: opacity 0.8s ease, background 0.3s linear, -webkit-transform 0.8s ease 0s;
-  -o-transition: transform 0.8s ease 0s, opacity 0.8s ease, background 0.3s linear;
-  transition: transform 0.8s ease 0s, opacity 0.8s ease, background 0.3s linear;
-  transition: transform 0.8s ease 0s, opacity 0.8s ease, background 0.3s linear, -webkit-transform 0.8s ease 0s;
+  -webkit-transition: opacity 0.8s ease, background 0.2s linear, -webkit-transform 0.8s ease 0s;
+  transition: opacity 0.8s ease, background 0.2s linear, -webkit-transform 0.8s ease 0s;
+  -o-transition: transform 0.8s ease 0s, opacity 0.8s ease, background 0.2s linear;
+  transition: transform 0.8s ease 0s, opacity 0.8s ease, background 0.2s linear;
+  transition: transform 0.8s ease 0s, opacity 0.8s ease, background 0.2s linear, -webkit-transform 0.8s ease 0s;
 }
 
 .arrow-to-show {
@@ -683,29 +709,21 @@ body.ie ._ibg img {
 }
 
 .header {
-  position: relative;
-  z-index: 100;
+  height: 155px;
 }
 
-.header__body {
-  height: 110px;
-  -webkit-box-shadow: 0px 5px 6px 1px rgba(0, 0, 0, 0.52);
-          box-shadow: 0px 5px 6px 1px rgba(0, 0, 0, 0.52);
-}
-
-.header .fixed {
+.header__fixed {
   position: fixed;
   background-color: #fff;
   width: 100%;
-  height: inherit;
   top: 0;
   left: 0;
+  z-index: 100;
   -webkit-box-shadow: 0px 5px 6px 1px rgba(0, 0, 0, 0.52);
           box-shadow: 0px 5px 6px 1px rgba(0, 0, 0, 0.52);
-  -webkit-animation-name: show-header;
-          animation-name: show-header;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-transition: top 0.8s ease 0s;
+  -o-transition: top 0.8s ease 0s;
+  transition: top 0.8s ease 0s;
 }
 
 .header__inner {
@@ -719,9 +737,6 @@ body.ie ._ibg img {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  z-index: 115;
-  height: 110px;
-  background-color: #fff;
 }
 
 .header__logo {
@@ -734,30 +749,6 @@ body.ie ._ibg img {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
-}
-
-@-webkit-keyframes show-header {
-  0% {
-    opacity: 0;
-    top: -70px;
-  }
-
-  100% {
-    opacity: 1;
-    top: 0;
-  }
-}
-
-@keyframes show-header {
-  0% {
-    opacity: 0;
-    top: -70px;
-  }
-
-  100% {
-    opacity: 1;
-    top: 0;
-  }
 }
 
 .icon__menu {
@@ -2280,8 +2271,8 @@ body.touch .sub-menu > li:last-child > a {
     max-width: 120px;
   }
 
-  .header__body {
-    height: 80px;
+  .header {
+    height: 116px;
   }
 
   .header__inner {
@@ -2524,8 +2515,8 @@ body.touch .sub-menu > li:last-child > a {
     padding: 8px 15px;
   }
 
-  .header__body {
-    height: 70px;
+  .header {
+    height: 106px;
   }
 
   .header__inner {
